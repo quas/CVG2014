@@ -26,21 +26,19 @@
       <file leaf-file-name="CVG_GUI.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CVG_GUI.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="53" selection-start="410" selection-end="410" vertical-scroll-proportion="0.4923077" vertical-offset="96" max-vertical-offset="968">
+            <state line="14" column="47" selection-start="347" selection-end="347" vertical-scroll-proportion="0.42777777" vertical-offset="0" max-vertical-offset="836">
               <folding>
-                <element signature="e#2#33#0" expanded="true" />
+                <element signature="e#0#31#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="events.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/PycharmProjects/PyQt/events.py">
+      <file leaf-file-name="un.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/PycharmProjects/PyQt/un.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="53" selection-start="469" selection-end="514" vertical-scroll-proportion="0.0" vertical-offset="66" max-vertical-offset="1034">
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
+            <state line="54" column="51" selection-start="2368" selection-end="2413" vertical-scroll-proportion="0.0" vertical-offset="1188" max-vertical-offset="1694">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -53,6 +51,7 @@
     </FindUsagesManager>
   </component>
   <component name="Git.Settings">
+    <option name="SYNC_SETTING" value="DONT" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitLogSettings">
@@ -70,6 +69,7 @@
         <option value="$USER_HOME$/PycharmProjects/PyQt/asd.py" />
         <option value="$USER_HOME$/PycharmProjects/PyQt/vata.py" />
         <option value="$USER_HOME$/PycharmProjects/PyQt/CVG_GUI.py" />
+        <option value="$USER_HOME$/PycharmProjects/PyQt/un.py" />
         <option value="$PROJECT_DIR$/CVG_GUI.py" />
       </list>
     </option>
@@ -141,7 +141,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="options.lastSelected" value="vcs.Git" />
+    <property name="options.lastSelected" value="reference.settings.ide.settings.notifications" />
     <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$USER_HOME$/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/GitHub, Inc/GitHub.appref-ms" />
     <property name="FullScreen" value="false" />
@@ -161,45 +161,7 @@
       <recent name="E:\Clouds\GitHub\CVG2014" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.CVG_GUI">
-    <configuration default="false" name="new" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$USER_HOME$/PycharmProjects/PyQt" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="PyQt" />
-      <option name="SCRIPT_NAME" value="$USER_HOME$/PycharmProjects/PyQt/new.py" />
-      <option name="PARAMETERS" value="" />
-      <RunnerSettings RunnerId="PyDebugRunner" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PyDebugRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="events" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$USER_HOME$/PycharmProjects/PyQt" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="PyQt" />
-      <option name="SCRIPT_NAME" value="$USER_HOME$/PycharmProjects/PyQt/events.py" />
-      <option name="PARAMETERS" value="" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.CVG_GUI (1)">
     <configuration default="false" name="CVG_GUI" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -253,6 +215,42 @@
       <RunnerSettings RunnerId="PyDebugRunner" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="un" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/PycharmProjects/PyQt" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="PyQt" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/PycharmProjects/PyQt/un.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="CVG_GUI (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="CVG2014" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CVG_GUI.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
@@ -378,19 +376,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.new" />
-      <item index="1" class="java.lang.String" itemvalue="Python.events" />
-      <item index="2" class="java.lang.String" itemvalue="Python.CVG_GUI" />
-      <item index="3" class="java.lang.String" itemvalue="Python.asd" />
-      <item index="4" class="java.lang.String" itemvalue="Python.vata" />
+      <item index="0" class="java.lang.String" itemvalue="Python.CVG_GUI" />
+      <item index="1" class="java.lang.String" itemvalue="Python.asd" />
+      <item index="2" class="java.lang.String" itemvalue="Python.vata" />
+      <item index="3" class="java.lang.String" itemvalue="Python.un" />
+      <item index="4" class="java.lang.String" itemvalue="Python.CVG_GUI (1)" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.CVG_GUI" />
-        <item index="1" class="java.lang.String" itemvalue="Python.vata" />
-        <item index="2" class="java.lang.String" itemvalue="Python.asd" />
-        <item index="3" class="java.lang.String" itemvalue="Python.events" />
-        <item index="4" class="java.lang.String" itemvalue="Python.new" />
+        <item index="0" class="java.lang.String" itemvalue="Python.CVG_GUI (1)" />
+        <item index="1" class="java.lang.String" itemvalue="Python.un" />
+        <item index="2" class="java.lang.String" itemvalue="Python.CVG_GUI" />
+        <item index="3" class="java.lang.String" itemvalue="Python.vata" />
+        <item index="4" class="java.lang.String" itemvalue="Python.asd" />
       </list>
     </recent_temporary>
   </component>
@@ -422,22 +420,22 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18021978" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14549288" sideWeight="0.6" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14549288" sideWeight="0.81978023" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18241759" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18241759" sideWeight="0.5002636" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18241759" sideWeight="0.49973643" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -472,15 +470,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="5" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cvgLeicaXmlReader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1936" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cvgMath.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2794" />
@@ -493,11 +486,7 @@
     </entry>
     <entry file="file://$USER_HOME$/PycharmProjects/PyQt/new.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="21" selection-start="253" selection-end="253" vertical-scroll-proportion="0.0" vertical-offset="264" max-vertical-offset="396">
-          <folding>
-            <element signature="e#24#34#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="12" column="21" selection-start="253" selection-end="253" vertical-scroll-proportion="0.0" vertical-offset="264" max-vertical-offset="396" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cvgLeicaXmlReader.py">
@@ -532,52 +521,41 @@
     </entry>
     <entry file="file://$USER_HOME$/PycharmProjects/PyQt/delet element from Qlistwidget.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="28" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="924">
-          <folding>
-            <element signature="e#31#55#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="0" column="28" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="924" />
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/PycharmProjects/PyQt/vata.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="5" selection-start="5" selection-end="5" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="946">
-          <folding>
-            <element signature="e#7#38#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="0" column="5" selection-start="5" selection-end="5" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="946" />
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/PycharmProjects/PyQt/new.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="30" selection-start="357" selection-end="379" vertical-scroll-proportion="0.5988858" vertical-offset="10" max-vertical-offset="1474">
-          <folding>
-            <element signature="e#24#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_execfile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="0" selection-start="1164" selection-end="1164" vertical-scroll-proportion="1.4461539" vertical-offset="40" max-vertical-offset="924">
-          <folding />
-        </state>
+        <state line="20" column="30" selection-start="357" selection-end="379" vertical-scroll-proportion="0.5988858" vertical-offset="10" max-vertical-offset="1474" />
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/PycharmProjects/PyQt/events.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="53" selection-start="469" selection-end="514" vertical-scroll-proportion="0.0" vertical-offset="66" max-vertical-offset="1034">
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
+        <state line="20" column="53" selection-start="469" selection-end="514" vertical-scroll-proportion="0.0" vertical-offset="66" max-vertical-offset="1034" />
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="0" selection-start="1164" selection-end="1164" vertical-scroll-proportion="0.81615597" vertical-offset="206" max-vertical-offset="924" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/PycharmProjects/PyQt/un.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="51" selection-start="2368" selection-end="2413" vertical-scroll-proportion="0.0" vertical-offset="858" max-vertical-offset="1694">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CVG_GUI.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="53" selection-start="410" selection-end="410" vertical-scroll-proportion="0.4923077" vertical-offset="96" max-vertical-offset="968">
+        <state line="14" column="47" selection-start="347" selection-end="347" vertical-scroll-proportion="0.42777777" vertical-offset="0" max-vertical-offset="836">
           <folding>
-            <element signature="e#2#33#0" expanded="true" />
+            <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
