@@ -1,30 +1,33 @@
 #!/usr/bin/env python3
 #-*- coding:utf-8 -*-
-
+import sys
 from xml.etree import ElementTree as ET
 
 def getPointsFromXmlFile(xml_file): #OK!
     """ function after parse file.xml returns an array of points of the form:
         [[(y1,x1)z1],[(y2,x2)z2]...[...n]] where z is a height """
-
-    points = []
-    cache = []
-    with open(xml_file, 'r', encoding='utf-8') as file:
-        tree = ET.parse(file)
-    ROOT = tree.getroot()
-    CgPoints = ROOT[-1]
-    for point in CgPoints:
-        cache.append(point.text)
-    for str_point in cache:
-        str_point = list(str_point.split())
-        point = []
-        for fl in str_point:
-            fl = float(fl)
-            point.append(fl)
-        a = tuple(point[:2])  # get tuple with (x,y)
-        b = point[-1]         # get height z
-        points.append([a,b])  # adding to array with all points [(y,x),z]
-    return points
+    try:
+        points = []
+        cache = []
+        with open(xml_file, 'r', encoding='utf-8') as file:
+            tree = ET.parse(file)
+        ROOT = tree.getroot()
+        CgPoints = ROOT[-1]
+        for point in CgPoints:
+            cache.append(point.text)
+        for str_point in cache:
+            str_point = list(str_point.split())
+            point = []
+            for fl in str_point:
+                fl = float(fl)
+                point.append(fl)
+            a = tuple(point[:2])  # get tuple with (x,y)
+            b = point[-1]         # get height z
+            points.append([a,b])  # adding to array with all points [(y,x),z]
+        return points
+    except:
+        print('errors in file')
+        return False
 
 def getRowsFromPoints(points, quantity): #OK!
     '''function get point list and quantity elements from down line at x axis

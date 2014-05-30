@@ -36,9 +36,6 @@ class myWindow(QtGui.QMainWindow):
         self.SB_HeightAboveSeaLevel.move(10, 75)
         self.SB_HeightAboveSeaLevel.setFixedWidth(50)
         self.SB_HeightAboveSeaLevel.setRange(-9999.99, 9999.99)
-        # self.SB_HeightAboveSeaLevel.setMaximum(9999.999)
-        # self.SB_HeightAboveSeaLevel.setMinimum(-9999.999)
-
 
         self.labelPointsSeaLevel = QtGui.QLabel('Height above sea level', self)
         self.labelPointsSeaLevel.setFixedWidth(250)
@@ -58,7 +55,7 @@ class myWindow(QtGui.QMainWindow):
         self.buttonGetVolume.clicked.connect(self.getVolume)
 
         self.showVolume = QtGui.QLabel('Get Vol', self)
-        self.showVolume.setFixedWidth(80)
+        self.showVolume.setFixedWidth(140)
         self.showVolume.setFixedHeight(32)
         self.showVolume.move(72, 117)
         self.showVolume.setStyleSheet("QLabel { background-color: white; \
@@ -68,13 +65,14 @@ class myWindow(QtGui.QMainWindow):
 
     def getVolume(self):
         xml_file = win.getFileName()
-        print()
-        if(xml_file):
+        points = cvgLeicaXmlReader.getPointsFromXmlFile(xml_file)
+        if(xml_file and points):
 
-            points = cvgLeicaXmlReader.getPointsFromXmlFile(xml_file)
+
             # length_of_points = len(points)
             QUANTITY_POINTS_AT_X_AXIS = self.SB_WidthOfXAxis.value()
             STATIC_HEIGHT = self.SB_HeightAboveSeaLevel.value()
+
             rows = cvgLeicaXmlReader.getRowsFromPoints(points, QUANTITY_POINTS_AT_X_AXIS)
             quads = cvgLeicaXmlReader.getAllQuads(rows)
 
@@ -90,19 +88,34 @@ class myWindow(QtGui.QMainWindow):
             volumes = 0 if STATIC_HEIGHT == 0 else (round(sum(volumes), 3))
             result = '-'+str(volumes) if STATIC_HEIGHT < 0 else str(volumes)
             result = '0' if result == '-0' else result
+            self.showVolume.setStyleSheet("QLabel { background-color: white; \
+                                           border: 1px solid grey; \
+                                           color: grey;}")
             self.showVolume.setText(result)
-
+        else:
+            self.showVolume.setText('Select the correct file!')
+            self.showVolume.setStyleSheet("QLabel { background-color: white; \
+                                           border: 1px solid grey; \
+                                           color: red; \
+                                           font-weight: bold}")
 
     def getFileName(self):
         return self.file
 
     def getXmlFile(self):
         sender = self.sender()
-        # directory = '/home' if (OS_PLATFORM is 'Linux') else 'E:\PythonProjects\GEO_PROJ\GEO'
         path = QtGui.QFileDialog.getOpenFileName(sender, 'Open Xml file with points', self.directory, 'XML *.xml')
         fileName = path[path.rfind('/')+1:]
         self.directory = path[:path.rfind('/')]
-        self.labelFilename.setText(fileName)
+        if(len(path) > 54):
+            start = len(path)-54
+            pathSlice = path[start:]
+            pathSlice = pathSlice[pathSlice.find('/'):]
+            pathSlice = '..'+pathSlice
+        else:
+            pathSlice = path
+        self.labelFilename.setText(pathSlice)
+        print(len(path))
         self.file = path
 
 
