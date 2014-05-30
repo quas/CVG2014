@@ -1,6 +1,7 @@
 from PyQt4 import QtGui, QtCore
 import sys
-import platform
+import cvgLeicaXmlReader
+import cvgMath
 
 class myWindow(QtGui.QMainWindow):
 
@@ -11,7 +12,7 @@ class myWindow(QtGui.QMainWindow):
         self.setWindowIcon(QtGui.QIcon('static/Icon.png'))
         self.setStyleSheet("QMainWindow {background-image: url(static/background.png);}")
         self.directory = ''
-
+        self.file = ''
 
         self.labelFilename = QtGui.QLabel('Select .XML file with points', self)
         self.labelFilename.setFixedWidth(300)
@@ -45,31 +46,65 @@ class myWindow(QtGui.QMainWindow):
         self.buttonOpenFile.setFixedWidth(30)
         self.buttonOpenFile.setFixedHeight(27)
         self.buttonOpenFile.move(311, 4)
-        self.buttonOpenFile.clicked.connect(self.buttonClicked)
+        self.buttonOpenFile.clicked.connect(self.getXmlFile)
 
         self.buttonGetVolume = QtGui.QPushButton('RUN', self)
         self.buttonGetVolume.setFixedWidth(52)
         self.buttonGetVolume.setFixedHeight(35)
         self.buttonGetVolume.move(9, 115)
+        self.buttonGetVolume.clicked.connect(self.getVolume)
 
-        self.labelGetVolume = QtGui.QLabel('Get Vol', self)
-        self.labelGetVolume.setFixedWidth(52)
-        self.labelGetVolume.setFixedHeight(32)
-        self.labelGetVolume.move(72, 117)
-        self.labelGetVolume.setStyleSheet("QLabel { background-color: white; \
+        self.showVolume = QtGui.QLabel('Get Vol', self)
+        self.showVolume.setFixedWidth(80)
+        self.showVolume.setFixedHeight(32)
+        self.showVolume.move(72, 117)
+        self.showVolume.setStyleSheet("QLabel { background-color: white; \
                                            border: 1px solid grey; \
                                            color: grey;}")
 
-    def buttonClicked(self):
 
+    def getVolume(self):
+        xml_file = win.getFileName()
+        print()
+        if(xml_file):
+
+            points = cvgLeicaXmlReader.getPointsFromXmlFile(xml_file)
+            # length_of_points = len(points)
+            QUANTITY_POINTS_AT_X_AXIS = self.SB_WidthOfXAxis.value()
+            STATIC_HEIGHT = self.SB_HeightAboveSeaLevel.value()
+            rows = cvgLeicaXmlReader.getRowsFromPoints(points, QUANTITY_POINTS_AT_X_AXIS)
+            quads = cvgLeicaXmlReader.getAllQuads(rows)
+
+            volumes = []
+            if (STATIC_HEIGHT or QUANTITY_POINTS_AT_X_AXIS) != 0:
+                for quadrangle in quads:
+                    Quadrangle_type = cvgMath.getTypeQuadrangle(quadrangle)
+                    v = cvgMath.getVolumeQuadrangle(quadrangle, Quadrangle_type, STATIC_HEIGHT)
+                    volumes.append(v)
+            else:
+                volumes = 0
+
+            volumes = 0 if STATIC_HEIGHT == 0 else (round(sum(volumes), 3))
+            result = '-'+str(volumes) if STATIC_HEIGHT < 0 else str(volumes)
+            result = '0' if result == '-0' else result
+            self.showVolume.setText(result)
+
+
+    def getFileName(self):
+        return self.file
+
+    def getXmlFile(self):
         sender = self.sender()
         # directory = '/home' if (OS_PLATFORM is 'Linux') else 'E:\PythonProjects\GEO_PROJ\GEO'
         path = QtGui.QFileDialog.getOpenFileName(sender, 'Open Xml file with points', self.directory, 'XML *.xml')
         fileName = path[path.rfind('/')+1:]
         self.directory = path[:path.rfind('/')]
         self.labelFilename.setText(fileName)
+        self.file = path
 
-app = QtGui.QApplication(sys.argv)
-win = myWindow()
-win.show()
-app.exec_()
+
+if __name__ == '__main__':
+    app = QtGui.QApplication(sys.argv)
+    win = myWindow()
+    win.show()
+    app.exec_()

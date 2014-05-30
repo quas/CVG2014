@@ -96,10 +96,12 @@ def getTypeQuadrangle(quadrangle):
         return quadrangle_type
 
 def getVolumeQuadrangle(quadrangle, quadrangle_type, static_height):
-    # function returned volume quadrangle
+    # function returned volume of quadrangle
+    static_height = abs(static_height)
     Quadrangle_sides = getSidesQuadrangle(quadrangle)
     quadrangle = sorted(quadrangle, key=lambda point: abs(point[1]))
     height = quadrangle[-1][1] # get a biggest height
+    height = abs(height)
     difference_height = height - static_height \
                         if height < static_height \
                         else static_height - height
