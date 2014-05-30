@@ -1,4 +1,4 @@
-from PyQt4 import QtGui, QtCore
+from PyQt4 import QtGui
 import sys
 import cvgLeicaXmlReader
 import cvgMath
@@ -32,10 +32,13 @@ class myWindow(QtGui.QMainWindow):
         self.labelPointsWidth.setFixedHeight(25)
         self.labelPointsWidth.move(65, 47.5)
 
-        self.SB_HeightAboveSeaLevel = QtGui.QSpinBox(self)
+        self.SB_HeightAboveSeaLevel = QtGui.QDoubleSpinBox(self)
         self.SB_HeightAboveSeaLevel.move(10, 75)
         self.SB_HeightAboveSeaLevel.setFixedWidth(50)
-        self.SB_HeightAboveSeaLevel.setRange(-9999, 9999)
+        self.SB_HeightAboveSeaLevel.setRange(-9999.99, 9999.99)
+        # self.SB_HeightAboveSeaLevel.setMaximum(9999.999)
+        # self.SB_HeightAboveSeaLevel.setMinimum(-9999.999)
+
 
         self.labelPointsSeaLevel = QtGui.QLabel('Height above sea level', self)
         self.labelPointsSeaLevel.setFixedWidth(250)

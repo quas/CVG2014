@@ -23,12 +23,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="CVG_GUI.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/CVG_GUI.py">
+      <file leaf-file-name="cvgMain.pyw" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cvgMain.pyw">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="109" column="4" selection-start="4393" selection-end="4393" vertical-scroll-proportion="0.80701756" vertical-offset="1846" max-vertical-offset="2530">
+            <state line="37" column="62" selection-start="1531" selection-end="1531" vertical-scroll-proportion="0.7076023" vertical-offset="330" max-vertical-offset="2596">
               <folding>
-                <element signature="e#0#31#0" expanded="true" />
+                <element signature="e#0#23#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -63,6 +63,7 @@
         <option value="$PROJECT_DIR$/cvgMain.py" />
         <option value="$PROJECT_DIR$/cvgMath.py" />
         <option value="$PROJECT_DIR$/CVG_GUI.py" />
+        <option value="$PROJECT_DIR$/cvgMain.pyw" />
       </list>
     </option>
   </component>
@@ -154,7 +155,7 @@
       <recent name="E:\Clouds\GitHub\CVG2014" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.CVG_GUI (1)">
+  <component name="RunManager" selected="Python.cvgMain.pyw">
     <configuration default="false" name="CVG_GUI" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -170,26 +171,6 @@
       <option name="SCRIPT_NAME" value="E:\Clouds\GitHub\CVG2014\CVG_GUI.py" />
       <option name="PARAMETERS" value="" />
       <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="vata" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$USER_HOME$/PycharmProjects/PyQt" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="PyQt" />
-      <option name="SCRIPT_NAME" value="$USER_HOME$/PycharmProjects/PyQt/vata.py" />
-      <option name="PARAMETERS" value="" />
-      <RunnerSettings RunnerId="PyDebugRunner" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PyDebugRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
@@ -246,6 +227,24 @@
       <RunnerSettings RunnerId="PyDebugRunner" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="cvgMain.pyw" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="CVG2014" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cvgMain.pyw" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
@@ -372,18 +371,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.CVG_GUI" />
-      <item index="1" class="java.lang.String" itemvalue="Python.vata" />
-      <item index="2" class="java.lang.String" itemvalue="Python.un" />
-      <item index="3" class="java.lang.String" itemvalue="Python.CVG_GUI (1)" />
-      <item index="4" class="java.lang.String" itemvalue="Python.cvgMain" />
+      <item index="1" class="java.lang.String" itemvalue="Python.un" />
+      <item index="2" class="java.lang.String" itemvalue="Python.CVG_GUI (1)" />
+      <item index="3" class="java.lang.String" itemvalue="Python.cvgMain" />
+      <item index="4" class="java.lang.String" itemvalue="Python.cvgMain.pyw" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.CVG_GUI (1)" />
+        <item index="0" class="java.lang.String" itemvalue="Python.cvgMain.pyw" />
         <item index="1" class="java.lang.String" itemvalue="Python.cvgMain" />
-        <item index="2" class="java.lang.String" itemvalue="Python.CVG_GUI" />
-        <item index="3" class="java.lang.String" itemvalue="Python.un" />
-        <item index="4" class="java.lang.String" itemvalue="Python.vata" />
+        <item index="2" class="java.lang.String" itemvalue="Python.CVG_GUI (1)" />
+        <item index="3" class="java.lang.String" itemvalue="Python.CVG_GUI" />
+        <item index="4" class="java.lang.String" itemvalue="Python.un" />
       </list>
     </recent_temporary>
   </component>
@@ -414,7 +413,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="1" width="1918" height="1048" extended-state="1" />
+    <frame x="1" y="1" width="1918" height="1048" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -484,11 +483,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2794" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cvgMain.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="31" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0" vertical-offset="22" max-vertical-offset="704" />
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/PycharmProjects/PyQt/delet element from Qlistwidget.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="28" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="924" />
@@ -545,20 +539,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cvgMain.py">
+    <entry file="file://$PROJECT_DIR$/cvgMain.pyw">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="686" selection-end="772" vertical-scroll-proportion="0.6754386" vertical-offset="0" max-vertical-offset="770">
+        <state line="37" column="62" selection-start="1531" selection-end="1531" vertical-scroll-proportion="0.7076023" vertical-offset="330" max-vertical-offset="2596">
           <folding>
-            <element signature="e#47#71#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CVG_GUI.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="109" column="4" selection-start="4393" selection-end="4393" vertical-scroll-proportion="0.80701756" vertical-offset="1846" max-vertical-offset="2530">
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
+            <element signature="e#0#23#0" expanded="true" />
           </folding>
         </state>
       </provider>
