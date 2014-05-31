@@ -68,8 +68,6 @@ class myWindow(QtGui.QMainWindow):
         points = cvgLeicaXmlReader.getPointsFromXmlFile(xml_file)
         if(xml_file and points):
 
-
-            # length_of_points = len(points)
             QUANTITY_POINTS_AT_X_AXIS = self.SB_WidthOfXAxis.value()
             STATIC_HEIGHT = self.SB_HeightAboveSeaLevel.value()
 
@@ -115,7 +113,6 @@ class myWindow(QtGui.QMainWindow):
         else:
             pathSlice = path
         self.labelFilename.setText(pathSlice)
-        print(len(path))
         self.file = path
 
 

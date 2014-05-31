@@ -26,8 +26,8 @@ def getSidesQuadrangle(quadrangle):
     diagonal1 = quadrangle[0], quadrangle[3]
 
     # Pythagoras: sqrt((x1-x2)**2 +(y1-y2)**2 +(z1-z2)**2)
-    diagonal_left_bottom_to_top = math.sqrt((diagonal1[0][0][0]-diagonal1[1][0][0])**2 + #диагональ от нижней левой точки к
-                          (diagonal1[0][0][1]-diagonal1[1][0][1])**2 + #верхней правой
+    diagonal_left_bottom_to_top = math.sqrt((diagonal1[0][0][0]-diagonal1[1][0][0])**2 +
+                          (diagonal1[0][0][1]-diagonal1[1][0][1])**2 +
                           (diagonal1[0][1]-diagonal1[1][1]))
 
     sides = {'left':left_side,'right':right_side,

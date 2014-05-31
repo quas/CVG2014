@@ -23,12 +23,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="cvgMain.pyw" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="cvgMain.pyw" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cvgMain.pyw">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="125" column="15" selection-start="0" selection-end="5121" vertical-scroll-proportion="3.1108596" vertical-offset="0" max-vertical-offset="2882">
+            <state line="69" column="0" selection-start="2829" selection-end="2829" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2816">
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cvgMath.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cvgMath.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="70" selection-start="1662" selection-end="1662" vertical-scroll-proportion="0.0" vertical-offset="1674" max-vertical-offset="2838">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cvgLeicaXmlReader.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cvgLeicaXmlReader.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="73" column="17" selection-start="2183" selection-end="2183" vertical-scroll-proportion="0.43589744" vertical-offset="1300" max-vertical-offset="2002">
+              <folding>
+                <element signature="e#45#55#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -61,11 +81,11 @@
         <option value="$USER_HOME$/PycharmProjects/PyQt/CVG_GUI.py" />
         <option value="$USER_HOME$/PycharmProjects/PyQt/un.py" />
         <option value="$PROJECT_DIR$/cvgMain.py" />
-        <option value="$PROJECT_DIR$/cvgMath.py" />
         <option value="$PROJECT_DIR$/CVG_GUI.py" />
         <option value="$PROJECT_DIR$/asd.xml" />
         <option value="$PROJECT_DIR$/cvgLeicaXmlReader.py" />
         <option value="$PROJECT_DIR$/cvgMain.pyw" />
+        <option value="$PROJECT_DIR$/cvgMath.py" />
       </list>
     </option>
   </component>
@@ -415,7 +435,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -426,7 +446,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39910313" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18241759" sideWeight="0.5002636" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2" sideWeight="0.49973643" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2" sideWeight="0.49973643" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -541,21 +561,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/cvgMain.pyw">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="0" selection-start="2829" selection-end="2829" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2816">
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/cvgMath.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="101" column="68" selection-start="4898" selection-end="4898" vertical-scroll-proportion="3.248538" vertical-offset="0" max-vertical-offset="2838" />
+        <state line="29" column="70" selection-start="1662" selection-end="1662" vertical-scroll-proportion="0.0" vertical-offset="1674" max-vertical-offset="2838">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cvgLeicaXmlReader.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="17" selection-start="2183" selection-end="2183" vertical-scroll-proportion="2.0584795" vertical-offset="198" max-vertical-offset="2002" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cvgMain.pyw">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="125" column="15" selection-start="0" selection-end="5121" vertical-scroll-proportion="3.1108596" vertical-offset="0" max-vertical-offset="2882">
+        <state line="73" column="17" selection-start="2183" selection-end="2183" vertical-scroll-proportion="0.43589744" vertical-offset="1300" max-vertical-offset="2002">
           <folding>
-            <element signature="e#0#23#0" expanded="true" />
+            <element signature="e#45#55#0" expanded="true" />
           </folding>
         </state>
       </provider>
