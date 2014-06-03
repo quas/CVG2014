@@ -97,19 +97,19 @@ def getTypeQuadrangle(quadrangle):
 
 def getVolumeQuadrangle(quadrangle, quadrangle_type, static_height):
     # function returned volume of quadrangle
-    static_height = abs(static_height)
+    static_height = static_height
     Quadrangle_sides = getSidesQuadrangle(quadrangle)
-    quadrangle = sorted(quadrangle, key=lambda point: abs(point[1]))
+    quadrangle = sorted(quadrangle, key=lambda point: point[1]) #abs(point[1])
     height = quadrangle[-1][1] # get a biggest height
-    height = abs(height)
-    difference_height = height - static_height \
-                        if height < static_height \
-                        else static_height - height
-    if quadrangle_type is 'foursquare': #Pythagoras
+    # height = abs(height)
+    difference_height = static_height - height \
+                        if static_height > height \
+                        else height - static_height
+    if quadrangle_type is 'foursquare' and Quadrangle_sides['left'] == abs(height): #Pythagoras
         V = Quadrangle_sides['left'] ** 3
         return V
     elif quadrangle_type is 'rectangle': #Pythagoras
-        V = Quadrangle_sides['left']*Quadrangle_sides['bottom']*height
+        V = Quadrangle_sides['left']*Quadrangle_sides['bottom']*difference_height
         return V
     else: #Heron
         top_triangle, bottom_triangle = getTriangles(Quadrangle_sides)
@@ -117,7 +117,7 @@ def getVolumeQuadrangle(quadrangle, quadrangle_type, static_height):
         s2 = (bottom_triangle[0] + bottom_triangle[1] + bottom_triangle[2])/2
         S1 = math.sqrt(s1*(s1-top_triangle[0])*(s1-top_triangle[1])*(s1 - top_triangle[2]))
         S2 = math.sqrt(s2*(s2-bottom_triangle[0])*(s2-bottom_triangle[1])*(s2 - bottom_triangle[2]))
-        V = (S1+S2)*abs(difference_height)
+        V = (S1+S2)*difference_height
         return V
 
 

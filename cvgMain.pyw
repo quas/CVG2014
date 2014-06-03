@@ -64,7 +64,8 @@ class myWindow(QtGui.QMainWindow):
 
 
     def getVolume(self):
-        xml_file = win.getFileName()
+
+        xml_file = self.getFileName()
         points = cvgLeicaXmlReader.getPointsFromXmlFile(xml_file)
         if(xml_file and points):
 
