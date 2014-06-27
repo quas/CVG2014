@@ -100,7 +100,10 @@ def getVolumeQuadrangle(quadrangle, quadrangle_type, static_height):
     static_height = static_height
     Quadrangle_sides = getSidesQuadrangle(quadrangle)
     quadrangle = sorted(quadrangle, key=lambda point: point[1]) #abs(point[1])
-    height = quadrangle[-1][1] # get a biggest height
+    if static_height < 0:
+        height = quadrangle[0][1] # get a biggest height
+    else:
+        height = quadrangle[-1][1]
     # height = abs(height)
     difference_height = static_height - height \
                         if static_height > height \
